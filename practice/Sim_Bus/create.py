@@ -19,7 +19,7 @@ class Station(simpy.Store):
         self.name = name
         self.station_id = station_id
         self.next_station_distance = next_station_distance
-        self.station_info = []
+        self.station_info = pd.DataFrame()
 
 
 class Passenger:
@@ -39,8 +39,8 @@ class Passenger:
         self.boarding_time = boarding_time
         self.boarding_station_id = boarding_station_id
         self.alighting_station_id = alighting_station_id
-        self.onboarding_time = np.random.normal(1.5, 0.5)
-        self.alighting_time = np.random.normal(1.5, 0.5)
+        self.onboarding_time = np.random.lognormal(np.log(1.5), 0.5)
+        self.alighting_time = np.random.lognormal(np.log(1.5), 0.5)
 
     def arrive_station(self, boarding_station_id, stations_list):
         """乘客到达站点并等待上车。
@@ -76,12 +76,14 @@ class Bus(simpy.Store):
         self.next_station_index = 1
         self.current_passenger_count = 0
         self.total_passenger_count = 0
-        self.bus_info = []
+        self.bus_info = pd.DataFrame()
+        self.global_utilization_rate = 0
 
     def start_bus(self):
         """每隔900 * bus_number秒后发车"""
         yield self.env.timeout(900 * self.bus_number)
-        yield self.env.process(self.board_and_alight_passengers(stations))
+        print(f'Bus {self.bus_number} starts at {self.env.now}')
+        self.env.process(self.board_and_alight_passengers(stations))
 
     def move_to_next_station(self, current_station):
         """公交车移动到下一站。
@@ -96,95 +98,43 @@ class Bus(simpy.Store):
         self.current_station_index = self.next_station_index
         self.next_station_index += 1
 
-    def board_single_passenger(self, current_station):
-        """单个乘客上车。"""
-        passenger = yield current_station.get()
-        if self.current_passenger_count >= self.capacity:
-            raise Exception('Bus is full')
-        yield self.env.timeout(passenger.onboarding_time)
-        yield self.put(passenger)
-        self.current_passenger_count += 1
-        self.total_passenger_count += 1
-
     def board_passengers(self, start_time, current_station):
         """多个乘客上车。"""
-        while self.env.now - start_time < 15:
-            if len(current_station.items) > 0:
-                yield from self.board_single_passenger(current_station)
-            if self.env.now - start_time >= 15:
+        boarding_count = 0
+        while self.env.now - start_time < 30:
+            boarded = False  # 设置一个标志，表示是否有乘客上车
+            for passenger in list(current_station.items):
+                if self.current_passenger_count >= self.capacity:
+                    break
+                yield self.env.timeout(passenger.onboarding_time)
+                self.items.append(passenger)
+                current_station.items.remove(passenger)
+                self.current_passenger_count += 1
+                boarded = True
+                boarding_count += 1
+            if not boarded:
                 break
 
-        if len(stations[self.current_station_index].items) > 0:
-            while self.env.now - start_time < 30:
-                if len(current_station.items) > 0:
-                    yield from self.board_single_passenger(current_station)
-                if self.env.now - start_time >= 30:
-                    break
+        self.bus_info.loc[self.current_station_index, 'boarding_count'] = boarding_count
+        current_station.station_info.loc[self.bus_number, 'boarding_count'] = boarding_count
 
-    def alight_single_passenger(self):
-        """单个乘客下车。"""
-        for passenger in list(self.items):
-            if passenger.alighting_station_id == self.current_station_index:
-                yield self.env.timeout(passenger.alighting_time)
-                self.items.remove(passenger)
-                self.current_passenger_count -= 1
-
-    def alight_passengers(self):
+    def alight_passengers(self, start_time, current_station):
         """多个乘客下车。"""
-        start_time = self.env.now
-        while self.env.now - start_time < 15:
-            yield from self.alight_single_passenger()
-            if self.env.now - start_time >= 15:
+        alighting_count = 0
+        while self.env.now - start_time <= 30:
+            alighted = False  # 设置一个标志，表示是否有乘客下车
+            for passenger in list(self.items):
+                if passenger.alighting_station_id <= self.current_station_index:
+                    yield self.env.timeout(passenger.alighting_time)
+                    self.items.remove(passenger)
+                    self.current_passenger_count -= 1
+                    alighted = True
+                    alighting_count += 1
+                    self.total_passenger_count += 1
+            if not alighted:
                 break
-        if any(passenger.alighting_station_id == self.current_station_index for passenger in self.items):
-            while self.env.now - start_time < 30:
-                yield from self.alight_single_passenger()
-                if self.env.now - start_time >= 30:
-                    break
-
-    def collect_bus_info(self, station, arrival_time, departure_time):
-        """收集公交车信息。
-
-        Args:
-            station: 当前站点。
-            arrival_time: 到达时间。
-            departure_time: 离开时间。
-        """
-        boarding_count = len(
-            [passenger for passenger in self.items if passenger.boarding_station_id == station.station_id])
-        alighting_count = len(
-            [passenger for passenger in self.items if passenger.alighting_station_id == station.station_id])
-        passenger_count_after_alighting = self.current_passenger_count
-        utilization_rate = passenger_count_after_alighting / self.capacity
-
-        self.bus_info.append({
-            'Arrival Time': arrival_time,
-            'Departure Time': departure_time,
-            'Boarding Count': boarding_count,
-            'Alighting Count': alighting_count,
-            'Passenger Count After Alighting': passenger_count_after_alighting,
-            'Utilization Rate': utilization_rate,
-        })
-
-    def update_station_info(self, current_station, arrival_time, departure_time):
-        """更新站点信息。
-
-        Args:
-            current_station: 当前站点。
-            arrival_time: 到达时间。
-            departure_time: 离开时间。
-        """
-        boarding_count = len(
-            [passenger for passenger in self.items if passenger.boarding_station_id == current_station.station_id])
-        alighting_count = len(
-            [passenger for passenger in self.items if passenger.alighting_station_id == current_station.station_id])
-        current_station.station_info.append({
-            'Bus Number': self.bus_number,
-            'Arrival Time': arrival_time,
-            'Departure Time': departure_time,
-            'Boarding Count': boarding_count,
-            'Alighting Count': alighting_count
-        })
+        self.bus_info.loc[self.current_station_index, 'alighting_count'] = alighting_count
+        current_station.station_info.loc[self.bus_number, 'alighting_count'] = alighting_count
 
     def process_passengers_at_station(self, current_station):
         """在一个站点处理乘客。
@@ -193,12 +143,27 @@ class Bus(simpy.Store):
             current_station: 当前站点。
         """
         arrival_time = self.env.now
+        self.bus_info.loc[self.current_station_index, 'station_id'] = current_station.station_id
+        self.bus_info.loc[self.current_station_index, 'arrival_time'] = arrival_time
+        self.bus_info.loc[self.current_station_index, 'passenger_count_before'] = self.current_passenger_count
+        current_station.station_info.loc[self.bus_number, 'bus_id'] = self.bus_number
+        current_station.station_info.loc[self.bus_number, 'arrival_time'] = arrival_time
+        current_station.station_info.loc[self.bus_number, 'passenger_count_before'] = self.current_passenger_count
+
         boarding_process = self.env.process(self.board_passengers(arrival_time, current_station))
-        alighting_process = self.env.process(self.alight_passengers())
+        alighting_process = self.env.process(self.alight_passengers(arrival_time, current_station))
         yield self.env.all_of([boarding_process, alighting_process])
+
         departure_time = self.env.now
-        self.collect_bus_info(current_station, arrival_time, departure_time)
-        self.update_station_info(current_station, arrival_time, departure_time)
+        self.bus_info.loc[self.current_station_index, 'departure_time'] = departure_time
+        self.bus_info.loc[self.current_station_index, 'residence_time'] = departure_time - arrival_time
+        self.bus_info.loc[self.current_station_index, 'passenger_count_after'] = self.current_passenger_count
+        self.bus_info.loc[self.current_station_index, 'utilization_rate'] = self.current_passenger_count / self.capacity
+        current_station.station_info.loc[self.bus_number, 'departure_time'] = departure_time
+        current_station.station_info.loc[self.bus_number, 'residence_time'] = departure_time - arrival_time
+        current_station.station_info.loc[self.bus_number, 'passenger_count_after'] = self.current_passenger_count
+        current_station.station_info.loc[
+            self.bus_number, 'utilization_rate'] = self.current_passenger_count / self.capacity
 
     def board_and_alight_passengers(self, stations_list):
         """乘客上下车，并移动到下一站。计算局部和全局利用率。
@@ -206,17 +171,18 @@ class Bus(simpy.Store):
         Args:
             stations_list: 站点列表。
         """
-        while self.next_station_index < len(stations_list):
+        while self.current_station_index < len(stations_list):
             current_station = stations_list[self.current_station_index]
             yield from self.process_passengers_at_station(current_station)
             yield self.env.process(self.move_to_next_station(current_station))
-        yield self.env.process(self.alight_passengers())
+        yield self.env.process(self.alight_passengers(self.env.now, stations_list[-1]))
         if self.current_passenger_count > 0:
             print(f'Warning: There are still{len(self.items)} passengers on the bus{self.bus_number}')
         global total_distance
-        global_utilization_rate = sum(info['Utilization Rate'] * stations_list[i].next_station_distance / total_distance
-                                      for i, info in enumerate(self.bus_info))
-        return global_utilization_rate
+        self.global_utilization_rate = sum(
+            self.bus_info['utilization_rate'][i] * stations_list[i].next_station_distance / total_distance
+            for i in range(48))
+        print(f'Bus {self.bus_number} finished at {self.env.now} with utilization rate {self.global_utilization_rate}')
 
 
 def create_stations(env):
@@ -247,10 +213,10 @@ def create_passengers(env, date_id, stations_list):
     Returns:
         passengers: 乘客列表。
     """
-    data = pd.read_csv('Data/passenger_info.csv', header=0,
+    data = pd.read_csv('Data/passenger_info_line1_day1.csv', header=0,
                        names=['date_id', 'order_id', 'boarding_station_id', 'boarding_station_name', 'boarding_time',
                               'alighting_station_id', 'alighting_station_name', 'alighting_time'])
-    data = data[data['date_id'] == date_id].head(20)
+    data = data[data['date_id'] == date_id]
     passengers_list = [Passenger(env, row['boarding_time'], row['boarding_station_id'], row['alighting_station_id']) for
                        index, row in data.iterrows()]
     for passenger in passengers_list:
@@ -260,7 +226,7 @@ def create_passengers(env, date_id, stations_list):
 
 
 def create_buses(env, num_buses, speed):
-    """一次性创建并启动所有的公交车。
+    """创建公交车并启动发车进程
 
     Args:
         env: simpy环境。
@@ -272,9 +238,9 @@ def create_buses(env, num_buses, speed):
     """
     buses_list = []
     for i in range(num_buses):
-        bus = Bus(env, i, speed)  # 创建新的公交车对象
+        bus = Bus(env, i, speed)
+        env.process(bus.start_bus())
         buses_list.append(bus)
-        env.process(bus.start_bus())  # 添加新的过程
     return buses_list
 
 
@@ -282,10 +248,14 @@ total_distance = 0
 env_ = simpy.Environment()
 stations = create_stations(env_)
 passengers = create_passengers(env_, 1, stations)
-buses = create_buses(env_, 60, 60)
+buses = create_buses(env_, 65, 60)
 
-env_.run(until=15.5 * 60 * 60)
+env_.run(until=17 * 60 * 60)
 
+print('Simulation completed!')
+
+
+#%%
 
 def export_info_to_csv(buses_list, stations_list):
     """导出前5个公交车和所有站点的信息为CSV文件。
@@ -294,15 +264,70 @@ def export_info_to_csv(buses_list, stations_list):
         buses_list: 公交车列表。
         stations_list: 站点列表。
     """
-    # 导出前5个公交车的信息
-    for i, bus in enumerate(buses_list[:5]):
-        df = pd.DataFrame(bus.bus_info)
-        df.to_csv(f'output_data/bus_{i}_info.csv')
+    for i, bus in enumerate(buses_list):
+        bus.bus_info.to_csv(f'output_data/bus_{i}_info.csv', index=False)
 
-    # 导出所有站点的信息
     for i, station in enumerate(stations_list):
-        df = pd.DataFrame(station.station_info)
-        df.to_csv(f'output_data/station_{i}_info.csv')
+        station.station_info.to_csv(f'output_data/station_{i}_info.csv', index=False)
 
 
-# export_info_to_csv(buses, stations)
+export_info_to_csv(buses, stations)
+
+
+#%%
+def calculate_number(buses_list):
+    num = 0
+    for bus in buses_list:
+        num += bus.total_passenger_count
+    print(num)
+
+
+calculate_number(buses)
+
+
+#%%
+def export_bus_utilization_to_csv(buses_list):
+    """导出每辆车的总利用率为CSV文件。
+
+    Args:
+        buses_list: 公交车列表。
+    """
+    data = {
+        'Bus Number': [],
+        'Total Passengers': [],
+        'Total Utilization Rate': [],
+    }
+    for bus in buses_list:
+        data['Bus Number'].append(bus.bus_number)
+        data['Total Passengers'].append(bus.total_passenger_count)
+        data['Total Utilization Rate'].append(bus.global_utilization_rate)
+
+    df = pd.DataFrame(data)
+    df.to_csv('output_data/all_buses_info.csv',index=False)
+
+
+def export_station_info_to_csv(stations_list):
+    """导出每个站点的信息为CSV文件。
+
+    Args:
+        stations_list: 站点列表。
+    """
+    data = {
+        'Station ID': [],
+        'Total Boarding Passengers': [],
+        'Total Alighting Passengers': [],
+        'Average Utilization Rate': [],
+    }
+    for station in stations_list:
+        data['Station ID'].append(station.station_id)
+        data['Total Boarding Passengers'].append(station.station_info['boarding_count'].sum())
+        data['Total Alighting Passengers'].append(station.station_info['alighting_count'].sum())
+        data['Average Utilization Rate'].append(station.station_info['utilization_rate'].mean())
+
+    df = pd.DataFrame(data)
+    df.to_csv('output_data/all_stations_info.csv',index=False)
+
+
+export_station_info_to_csv(stations)
+
+export_bus_utilization_to_csv(buses)
