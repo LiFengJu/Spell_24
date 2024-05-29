@@ -68,7 +68,7 @@ class Bus(simpy.Store):
     """
 
     def __init__(self, env, bus_number, speed):
-        super().__init__(env, capacity=30)
+        super().__init__(env, capacity=90)
         self.env = env
         self.bus_number = bus_number
         self.speed = speed
@@ -248,9 +248,9 @@ total_distance = 0
 env_ = simpy.Environment()
 stations = create_stations(env_)
 passengers = create_passengers(env_, 1, stations)
-buses = create_buses(env_, 65, 60)
+buses = create_buses(env_, 61, 10)
 
-env_.run(until=17 * 60 * 60)
+env_.run(until=16.5 * 60 * 60)
 
 print('Simulation completed!')
 

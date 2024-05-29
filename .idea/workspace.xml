@@ -4,137 +4,128 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd9d0da7-38c2-4362-8f47-b7eb83361909" name="更改" comment="搬运一些以前写的代码，更新最近写的Bus仿真。明天再把仿真彻底调试好。">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Draft/d2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/Data/passenger_info_line1_day1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/analyse_data.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/all_buses_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/all_stations_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_0_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_10_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_11_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_12_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_13_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_14_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_15_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_16_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_17_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_18_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_19_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_1_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_20_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_21_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_22_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_23_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_24_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_25_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_26_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_27_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_28_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_29_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_2_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_30_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_31_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_32_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_33_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_34_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_35_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_36_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_37_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_38_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_39_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_3_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_40_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_41_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_42_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_43_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_44_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_45_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_46_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_47_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_48_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_49_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_4_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_50_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_51_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_52_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_53_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_54_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_55_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_56_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_57_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_58_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_59_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_5_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_60_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_61_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_62_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_63_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_64_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_6_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_7_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_8_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_9_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_0_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_10_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_11_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_12_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_13_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_14_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_15_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_16_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_17_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_18_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_19_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_1_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_20_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_21_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_22_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_23_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_24_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_25_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_26_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_27_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_28_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_29_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_2_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_30_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_31_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_32_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_33_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_34_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_35_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_36_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_37_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_38_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_39_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_3_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_40_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_41_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_42_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_43_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_44_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_45_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_46_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_47_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_48_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_4_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_5_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_6_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_7_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_8_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_9_info.csv" afterDir="false" />
+    <list default="true" id="cd9d0da7-38c2-4362-8f47-b7eb83361909" name="更改" comment="仿真做完了，debug的过程实在是痛苦，不过这次仿真代码写得比上次多少要成熟点。后面还再做点分析就行了。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Draft/d1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/d1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Draft/d1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/d1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STU/ORO/modeling-examples-master/traveling_salesman/tsp.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/STU/ORO/modeling-examples-master/traveling_salesman/tsp.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/Data/passenger_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/analyse_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/analyse_data.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/all_buses_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/all_buses_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/all_stations_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/all_stations_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_0_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_0_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_10_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_10_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_11_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_11_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_12_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_12_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_13_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_13_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_14_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_14_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_15_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_15_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_16_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_16_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_17_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_17_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_18_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_18_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_19_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_19_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_1_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_1_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_20_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_20_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_21_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_21_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_22_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_22_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_23_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_23_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_24_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_24_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_25_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_25_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_26_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_26_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_27_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_27_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_28_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_28_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_29_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_29_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_2_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_2_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_30_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_30_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_31_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_31_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_32_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_32_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_33_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_33_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_34_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_34_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_35_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_35_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_36_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_36_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_37_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_37_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_38_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_38_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_39_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_39_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_3_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_3_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_40_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_40_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_41_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_41_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_42_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_42_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_43_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_43_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_44_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_44_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_45_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_45_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_46_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_46_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_47_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_47_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_48_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_48_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_49_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_49_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_4_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_4_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_50_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_50_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_51_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_51_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_52_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_52_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_53_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_53_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_54_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_54_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_55_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_55_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_56_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_56_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_57_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_57_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_58_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_58_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_59_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_59_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_5_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_5_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_60_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_60_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_61_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_62_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_63_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_64_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_6_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_6_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_7_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_7_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_8_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_8_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_9_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/bus_9_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_0_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_0_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_10_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_10_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_11_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_11_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_12_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_12_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_13_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_13_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_14_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_14_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_15_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_15_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_16_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_16_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_17_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_17_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_18_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_18_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_19_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_19_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_1_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_1_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_20_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_20_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_21_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_21_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_22_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_22_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_23_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_23_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_24_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_24_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_25_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_25_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_26_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_26_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_27_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_27_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_28_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_28_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_29_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_29_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_2_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_2_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_30_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_30_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_31_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_31_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_32_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_32_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_33_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_33_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_34_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_34_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_35_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_35_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_36_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_36_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_37_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_37_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_38_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_38_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_39_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_39_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_3_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_3_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_40_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_40_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_41_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_41_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_42_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_42_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_43_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_43_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_44_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_44_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_45_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_45_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_46_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_46_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_47_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_47_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_48_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_48_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_4_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_4_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_5_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_5_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_6_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_6_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_7_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_7_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_8_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_8_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_9_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/output_data/station_9_info.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/passenger.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/passenger.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/sim0.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/station.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/station.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/simple.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,16 +166,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -207,6 +198,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="搬运一些以前写的代码，更新最近写的Bus仿真。明天再把仿真彻底调试好。" />
-    <option name="LAST_COMMIT_MESSAGE" value="搬运一些以前写的代码，更新最近写的Bus仿真。明天再把仿真彻底调试好。" />
+    <MESSAGE value="仿真做完了，debug的过程实在是痛苦，不过这次仿真代码写得比上次多少要成熟点。后面还再做点分析就行了。" />
+    <option name="LAST_COMMIT_MESSAGE" value="仿真做完了，debug的过程实在是痛苦，不过这次仿真代码写得比上次多少要成熟点。后面还再做点分析就行了。" />
   </component>
 </project>

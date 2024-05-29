@@ -1,0 +1,46 @@
+title: am516 state machine
+location: "Asia/Shanghai"
+# nodeId used for Twitter SnowFlake sequence generate algorithm, should be changed with different server
+# 分布式部署时，每个节点的nodeId必须唯一，互相不能重复
+snowflaker:
+  nodeId: 1
+
+web:
+  # 安全验证
+  jwt:
+    #token签名
+    # signkey: 1(*df&^s,?l
+    signkey: UserTokenKeyMIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMJCvbmeb5t7bH1j_V_g5Q56Zk1h1akGMP2des6ckzU0Mw4DXQprwg3Xf7m69XseymQTTxamyfrvjm5uRa5gLlImQpHj9U8TNTrvbzYIj7aFL8qz_xF
+    #token失效时间长度（秒）
+    expire: 360000
+    #token发行者
+    issuer: unismartcore
+
+  # address: localhost:8080
+  address: :80
+  # basepath  the root URI for REST
+  api: /
+
+  #static:
+    #path: "/web"
+    #root: "E:/Projects/unismartcore/qms/web/dist"
+
+  # defaultPageSize change the default for the number of items served in a single page
+  # defaultPageSize: 10
+  # maxPageSize change the maximum number of items in a single page
+  # pageParamName change the name of the query parameter for selecting pages
+  # limitParamName change the name of the query parameter for the number of items to show in a page
+  # sortParamName change the name of the query parameter for sorting
+  # defaultMediaType change the default media type to use when none is specified
+  # returnBodyOnCreate change whether a body should be returned when creating a new entity
+  # returnBodyOnUpdate change whether a body should be returned when updating an entity
+
+# gua script engine
+# gepeng@2021-09-18
+gua:
+#   path: E:/projects/unismartcore/uscup/app/am516/app/sm/lua/
+  path: ./lua/
+
+nats:
+  websocket:
+    port: 443
