@@ -7,20 +7,15 @@
 local r1 = {
     name = "r1",
     part = "",
-    currentState = Nil,
 }
 
-function r1:execute(line)
-    self.line = line
+function r1:execute()
     changeState(self, "r1s1")
     return self
 end
 
 function r1:onEvent(event)
     --print("三色灯状态", event.conf.plc:readI16(27,16))
-    if self.currentState ~= Nil then
-        self.currentState:onEvent(self, event)
-    end
 end
 
 return r1

@@ -9,17 +9,13 @@ local r3 = {
     bus = "516.am",
 }
 
-function r3:execute(line)
-    print(self.name)
-    self.line = line
+function r3:execute()
     changeState(self, "r3s1")
     return self
 end
 
 
 function r3:onEvent(event)
-    print("onevent")
-    --changeState(self, "r3s1")
     --require("nats").SubscribeFunc(self.bus, "am:r1")
 end
 

@@ -7,28 +7,11 @@
 local z2 = {
     name = "robot1",
     part = "",
-    currentState  = null
 }
 
-function z2:execute(line)
-    print(self.name)
-    self.line = line
+function z2:execute()
     changeState(self, "z2s1")
     return self
-end
-
-
-function z2:onEvent(event)
-    --print(event)
-    --print("三色灯状态", event.conf.plc:readI16(27,16))
-
-    --print("target", event.target)
-    --print("data", event.data)
-    --print("data.value", event.data.value)
-    --print("self.currentState", self.currentState.name)
-    if self.currentState ~= null then
-        self.currentState:onEvent(self, event)
-    end
 end
 
 return z2

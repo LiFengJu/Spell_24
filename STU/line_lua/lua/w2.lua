@@ -9,29 +9,13 @@ local w2 = {
     part = "",
 }
 
-function w2:execute(line)
-    print("w2 is running-----------------------------------------------")
-    print(self.name)
-    self.line = line
+function w2:execute()
     changeState(self, "w2s1")
     return self
 end
 
 function w2:onEvent(event)
-    print("w2 is triggered-----------------------------------------------")
-    if event.name=="run" then
-        print("w2 is triggered-----------------------------------------------", event.name)
-    end
-    print(event)
     --print("三色灯状态", event.conf.plc:readI16(27,16))
-
-    --print("target", event.target)
-    --print("data", event.data)
-    --print("data.value", event.data.value)
-    --print("self.currentState", self.currentState.name)
-    if self.currentState ~= null then
-        self.currentState:onEvent(self, event)
-    end
 end
 
 return w2

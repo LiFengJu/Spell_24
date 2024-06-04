@@ -3,7 +3,6 @@ local fqcs2 = {
 }
 
 function fqcs2:execute(m)
-    print(self.name, "fqcs2.execute")
     return self
 end
 

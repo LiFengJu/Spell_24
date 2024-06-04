@@ -12,12 +12,17 @@ local line = {
 
 function line:execute()
     for _, name in ipairs(self.machines) do
-        local m = require(name):execute(self)
-        print("==========machine: ", m)
-        if has_method(m, "onEvent") then
+        local m = require(name)
+        m.line = self
+        m:execute()
+        if has_method(m, "onEvent") or (m.currentState ~= Nil and has_method(m.currentState, "onEvent")) then
             self:subscribe(function(event)
-                print("onEvent root---------------", event.name, m.name)
-                m:onEvent(event)
+                if has_method(m, "onEvent") then
+                    m:onEvent(event)
+                end
+                if m.currentState ~= Nil and has_method(m.currentState, "onEvent") then
+                    m.currentState:onEvent(m, event)
+                end
             end)
         end
     end

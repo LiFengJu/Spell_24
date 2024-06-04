@@ -8,15 +8,13 @@ local r2 = {
     name = "robot 2",
 }
 
-function r2:execute(line)
-    self.line = line
+function r2:execute()
     changeState(self, "r2s1")
     return self
 end
 
 
 function r2:onEvent(event)
-    print("onevent", self.name, event)
 end
 
 return r2

@@ -9,25 +9,14 @@ local w1 = {
     part = "",
 }
 
-function w1:execute(line)
-    print(self.name)
-    self.line = line
+function w1:execute()
     changeState(self, "w1s1")
     return self
 end
 
 
 function w1:onEvent(event)
-    print(event)
     --print("三色灯状态", event.conf.plc:readI16(27,16))
-
-    --print("target", event.target)
-    --print("data", event.data)
-    --print("data.value", event.data.value)
-    --print("self.currentState", self.currentState.name)
-    if self.currentState ~= null then
-        self.currentState:onEvent(self, event)
-    end
 end
 
 return w1

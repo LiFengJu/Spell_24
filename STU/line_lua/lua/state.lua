@@ -5,7 +5,7 @@
 --- state is a global variable which contains states of the line
 
 state = {
-    running = false,
+    running = False,
     led = {
         color = "",
     },

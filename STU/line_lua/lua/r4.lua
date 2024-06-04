@@ -6,19 +6,15 @@
 
 local r4 = {
     name = "robot 2",
-    currentState  = null
 }
 
-function r4:execute(line)
-    print(self.name)
-    self.line = line
+function r4:execute()
     changeState(self, "r4s1")
     return self
 end
 
 
 function r4:onEvent(event)
-    print("onevent")
     --changeState(m, "r4s1")
     --self.line:subscribe(self.)
 end

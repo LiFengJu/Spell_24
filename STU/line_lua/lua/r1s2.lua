@@ -4,10 +4,6 @@ local r1s2 = {
 
 function r1s2:execute(m, args)
     self.m = m
-    print(self.name, args)
-    if args~=nil then
-        print("args.name", args.name)
-    end
     timer.push(3, function(id)
         print("onTimer",self.name, id, self.m, self.m.line)
         state:setStock(20)

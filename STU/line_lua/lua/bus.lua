@@ -10,13 +10,14 @@ bus = {
 }
 
 function bus:publish(topic, data)
-    local m = self.rooms[topic]
-    for id, cbk in pairs(m) do
-        print("bus:publish", topic, id, cbk)
-        if cbk~=Nil then
-            cbk(data)
+    timer.push(0, function()
+        local m = self.rooms[topic]
+        for id, cbk in pairs(m) do
+            if cbk~=Nil then
+                cbk(data)
+            end
         end
-    end
+    end)
 end
 
 function bus:subscribe(topic, callback)

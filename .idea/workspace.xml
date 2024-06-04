@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd9d0da7-38c2-4362-8f47-b7eb83361909" name="更改" comment="把lua代码搬过来方便平板查看">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cd9d0da7-38c2-4362-8f47-b7eb83361909" name="更改" comment="更新下readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +78,7 @@
     <MESSAGE value="搬运一些以前写的代码，更新最近写的Bus仿真。明天再把仿真彻底调试好。" />
     <MESSAGE value="仿真做完了，debug的过程实在是痛苦，不过这次仿真代码写得比上次多少要成熟点。后面还再做点分析就行了。" />
     <MESSAGE value="把lua代码搬过来方便平板查看" />
-    <option name="LAST_COMMIT_MESSAGE" value="把lua代码搬过来方便平板查看" />
+    <MESSAGE value="更新下readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新下readme" />
   </component>
 </project>

@@ -3,7 +3,6 @@ local led_s1 = {
 }
 
 function led_s1:execute(m)
-    print("state---------------", state)
    state:set(function(k)
         k.led.color = self.color
     end)

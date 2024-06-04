@@ -14,8 +14,6 @@ function r2s1:exit(m)
 end
 
 function r2s1:moveto(m, x, y)
-    print(self.name)
-    print("move", x,y)
     changeState(m, "r2s2", {
         target= "w1",
         name = "wipok",
