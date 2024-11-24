@@ -4,7 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd9d0da7-38c2-4362-8f47-b7eb83361909" name="更改" comment="更新下readme" />
+    <list default="true" id="cd9d0da7-38c2-4362-8f47-b7eb83361909" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/Draft/d3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Draft/d4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Draft/d5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STU/OR_gurobipy/assign_problem.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STU/OR_gurobipy/target.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STU/OR_gurobipy/temp1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STU/OR_gurobipy/transportation_problem.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/calculate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/class_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/客户数据0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/客户数据1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/客户数据2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/服务器数据0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/原始/服务器数据1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/calculate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/class_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/客户数据0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/客户数据1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/客户数据2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/服务器数据0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽管理/服务器数据1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/calculate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/class_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/客户数据0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/客户数据1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/客户数据2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/服务器数据0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CDN/带宽错峰/服务器数据1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/AcreYield.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/PlantingCost.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/expectedSales.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/landArea.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/planting1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/planting2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/unitPrice.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/作物信息.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/附件1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data/附件2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/data1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/model/model0.lp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/model/model0.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/model/model1.lp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/model/model1.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/model1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/result/result1_1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/result/result1_2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/CUMCM24/result/result2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/HW/p1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/HW/p2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/HW/p3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/HW/p4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/HW/p4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/YST/da1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/YST/da2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/YST/da3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/YST/data/temp.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/YST/data/待复购的用户列表.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/YST/merged_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/d1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/d1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/d1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/d1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/d2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/d2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draft/d3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Draft/d3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/main_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/passenger.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/analyse_passenger.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/sim1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/station.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/practice/Sim_Bus/analyse_station.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Sim_Bus/test.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +90,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -49,15 +126,25 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MECHREVO/DataspellProjects/Spell_24/practice/CUMCM24&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MECHREVO\DataspellProjects\Spell_24\practice\CUMCM24" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MECHREVO\DataspellProjects\Spell_24\STU\OR_stu" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-559ba0cadc45-1e0160e1c7f0-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-241.15989.62" />
+        <option value="bundled-python-sdk-afb2d50b81ac-2ff200790375-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-241.18034.23" />
       </set>
     </attachedChunks>
   </component>
@@ -79,6 +166,7 @@
     <MESSAGE value="仿真做完了，debug的过程实在是痛苦，不过这次仿真代码写得比上次多少要成熟点。后面还再做点分析就行了。" />
     <MESSAGE value="把lua代码搬过来方便平板查看" />
     <MESSAGE value="更新下readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新下readme" />
+    <MESSAGE value="更新下lua，方便平板看" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新下lua，方便平板看" />
   </component>
 </project>
